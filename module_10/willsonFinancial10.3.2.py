@@ -3,7 +3,7 @@ from mysql.connector import errorcode
 
 config = {
     "user": "root",
-    "password": "Ostrich%2020",
+    "password": "Qexeoymp4123!",
     "host": "127.0.0.1",
     "database": "willsonFinancial",
     "raise_on_warnings": True
@@ -51,7 +51,7 @@ for asset in assets:
 
 cursor.execute("SELECT transaction_id, account_id, asset_id, transaction_name, transaction_value, transaction_type FROM transaction")
 transactions = cursor.fetchall()
-print("- - DISPLAYING ACCOUNT RECORDS - -")
+print("- - DISPLAYING TRANSACTION RECORDS - -")
 for transaction in transactions:
     print("Transaction ID: {}".format(transaction[0]))
     print("Account ID: {}".format(transaction[1]))
