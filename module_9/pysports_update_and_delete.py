@@ -21,7 +21,7 @@ finally:
 
 cursor = connection.cursor()
 
-# Update newly added player's team to different team_name value
+# Delete Amy from the team
 
 
 cursor.execute("DELETE FROM players WHERE first_name = 'Amy'")
